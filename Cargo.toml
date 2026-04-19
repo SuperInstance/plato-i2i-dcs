@@ -1,0 +1,14 @@
+[package]
+name = "plato-i2i-dcs"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+
+[lib]
+name = "plato_i2i_dcs"
+path = "src/lib.rs"
+
+[dependencies]
+# Inline modules from plato-kernel (zero deps)
+# Note: These would use path="../plato-kernel" in a workspace
+# For standalone build, we include the relevant types directly
